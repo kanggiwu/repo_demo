@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="myDuck" class = "design.duck.MallardDuck" init-method = "display" scope ="singleton">
+	<!-- id는 인스턴스 변수이다. 객체를 찾을 수 있는 키값이다. --> <!--클래스 파일이 없기 때문에 빨간줄: 클래스 생성 후 빨간 줄 사라짐 --><!-- 메소드 선언 --><!-- 싱글톤으로 구현 -->
+		
+	</bean>
+	<bean name = "duckDependency" class = "design.duck.RubberDuck" init-method = "display" scope ="singleton">
+	
+	</bean>
+</beans>
